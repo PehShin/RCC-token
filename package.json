@@ -1,0 +1,16 @@
+{
+  "name": "RCC Token",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ pshin/RCC Token",
+    "create-local": "graph create --node http://localhost:8020/ pshin/RCC Token",
+    "remove-local": "graph remove --node http://localhost:8020/ pshin/RCC Token",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 pshin/RCC Token"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
